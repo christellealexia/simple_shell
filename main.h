@@ -7,7 +7,7 @@
 #include <sys/stat.h>
 #include <unistd.h>
 
-void execmd(char **argv);
-char *get_location(char *command);
+void exe_cmd(char **argv);
+char *getlocation(char *command);
 
 #endif
