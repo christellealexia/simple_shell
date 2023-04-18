@@ -7,6 +7,7 @@
 #include <sys/stat.h>
 #include <unistd.h>
 
+int _strlen(char *s);
 void exe_cmd(char **argv);
 char *getlocation(char *command);
 
