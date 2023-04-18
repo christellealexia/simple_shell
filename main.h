@@ -10,5 +10,6 @@
 int _strlen(char *s);
 void exe_cmd(char **argv);
 char *getlocation(char *command);
+char *_strcat(char *dest, char *str);
 
 #endif
