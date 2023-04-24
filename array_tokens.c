@@ -2,7 +2,7 @@
 
 /**
  * arrayTokens - makes an of of tokens
- * @inputbuffer: input command
+ * @inputbuffer: command that is entered
  * Return: a pointer to pointer
  */
 
