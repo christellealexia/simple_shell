@@ -2,7 +2,7 @@
 #include "main.h"
 /**
  * read_line - function to read input
- * Return: no return
+ * Return: char
  */
 char *read_line(void)
 {
