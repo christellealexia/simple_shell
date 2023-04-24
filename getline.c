@@ -1,18 +1,11 @@
 #define buffersize 1024
 #include "main.h"
-<<<<<<< HEAD
 
 /**
  * read_line - read user input
  * Return: the command line
  */
 
-=======
-/**
- * read_line - function to read input
- * Return: char
- */
->>>>>>> 50f6aa0d0115b456cf5a9fa13e95af87342ab8b4
 char *read_line(void)
 {
 	int buff = buffersize;
@@ -22,11 +15,7 @@ char *read_line(void)
 
 	if (!buffer)
 	{
-<<<<<<< HEAD
 		fprintf(stderr,"BUFFER: allocation error\n");
-=======
-		fprintf(stderr,"lsh: allocation error\n");
->>>>>>> 50f6aa0d0115b456cf5a9fa13e95af87342ab8b4
 		exit(EXIT_FAILURE);
 	}
 	while (1)
