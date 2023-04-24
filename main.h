@@ -11,6 +11,7 @@
 int _strlen(char *s);
 char *_strcat(char *dest, char *str);
 char *read_line(void);
+char **arrayTokens(char *inputbuffer);
 void exe_cmd(char **argv);
 char *getlocation(char *command);
 
