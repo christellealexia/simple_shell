@@ -6,8 +6,9 @@
  * Return: a pointer to pointer
  */
 
-char **arrayTokens(char *inputbuffer)
+char **arrayTokens(void)
 {
+	char *inputbuffer = read_line();
 	char *copy_inputbuffer;
 	int nchars;
 	char **tokenArray;

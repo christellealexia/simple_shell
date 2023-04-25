@@ -34,6 +34,7 @@ int _cd(char **argv)
 }
 int our_exit(char **argv)
 {
+	(void)argv;
 	return (0);
 }
 /**
@@ -56,5 +57,5 @@ int _execute(char **argv)
 			return (*builtinfunc[i])(argv);
 		}
 	}
-	return exe_cmd(argv);
+	return exe_cmd();
 }

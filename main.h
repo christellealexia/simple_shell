@@ -11,12 +11,12 @@
 int _strlen(char *s);
 char *_strcat(char *dest, char *str);
 char *read_line(void);
-char **arrayTokens(char *inputbuffer);
-void exe_cmd(char **argv);
+char **arrayTokens(void);
+int exe_cmd(void);
 char *getlocation(char *command);
 int _cd(char **args);
 int our_exit(char **args);
-int (*builtinfunc[])(char**);
+int (*builtinfunc[2])(char**);
 int _numbuiltin(void);
 int _execute(char **args);
 

@@ -10,16 +10,12 @@
 int main(int argc, char **argv)
 {
 	char *prompt = "(AlexiaNeza)$ ";
-	char *inputbuffer = NULL;
 
 	(void)argc;
-	(void)argv;
 	while (1)
 	{
 		printf("%s", prompt);
-		inputbuffer = read_line();
-		_execute((arrayTokens(inputbuffer)));
+		_execute(argv);
 	}
-	free(inputbuffer);
 	return (0);
 }

@@ -5,8 +5,9 @@
  * @argv: array of tokens
  */
 
-void exe_cmd(char **argv)
+int exe_cmd(void)
 {
+	char **argv = arrayTokens();
 	char *command = NULL, *actual_command = NULL;
 	pid_t pid;
 	int status;
@@ -35,4 +36,5 @@ void exe_cmd(char **argv)
 			waitpid(pid, &status, WUNTRACED);
 		} while (!WIFEXITED(status) && !WIFSIGNALED(status));
 	}
+	return (1);
 }
