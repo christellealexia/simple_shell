@@ -18,7 +18,7 @@ int main(int argc, char **argv)
 	{
 		printf("%s", prompt);
 		inputbuffer = read_line();
-		exe_cmd((arrayTokens(inputbuffer)));
+		_execute((arrayTokens(inputbuffer)));
 	}
 	free(inputbuffer);
 	return (0);
