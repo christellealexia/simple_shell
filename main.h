@@ -14,5 +14,10 @@ char *read_line(void);
 char **arrayTokens(char *inputbuffer);
 void exe_cmd(char **argv);
 char *getlocation(char *command);
+int _cd(char **args);
+int _exit(char **args);
+int (*builtinfunc[])(char**);
+int _numbuiltin(void);
+int _execute(char **args);
 
 #endif
