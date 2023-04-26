@@ -52,7 +52,7 @@ int _execute(char **argv)
 	}
 	for (i = 0; i < _numbuiltins(); i++)
 	{
-		if (strcmp(argv[0], builtin_str[i]) == 0)
+		if (_strcmp(argv[0], builtin_str[i]) == 0)
 		{
 			return (*builtinfunc[i])(argv);
 		}
