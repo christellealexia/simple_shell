@@ -9,6 +9,7 @@
 #include <sys/wait.h>
 
 int _strlen(char *s);
+char _strdup(char *str);
 char *_strcat(char *dest, char *str);
 char *read_line(void);
 char **arrayTokens(void);
